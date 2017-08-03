@@ -40,7 +40,7 @@ ShadowsocksR-libev for OpenWrt
      ./scripts/feeds install zlib libopenssl libpolarssl libmbedtls libpcre
      rm -rf package/feeds/base/mbedtls/patches
    # 获取 shadowsocksr-libev Makefile
-   git clone https://github.com/chenhw2/openwrt-shadowsocksr.git package/feeds/shadowsocksr-libev
+   git clone https://github.com/chnt7305/openwrt-shadowsocksr.git package/feeds/shadowsocksr-libev
    # 选择要编译的包 Network -> shadowsocksr-libev
    make menuconfig
    # 开始编译
@@ -63,7 +63,7 @@ ShadowsocksR-libev for OpenWrt
    timeout        | 数值       | 超时时间（秒）, 默认 60
    fast_open      | 布尔值     | 是否启用 [TCP-Fast-Open][F], 只适用于 ssr-local
    nofile         | 数值       | 设置 Linux ulimit
-   protocol       | 协议插件   | [协议插件][P]，推荐使用```orgin, auth_aes128_md5, auth_aes128_sha1, auth_chain_a```
+   protocol       | 协议插件   | [协议插件][P]，推荐使用```orgin, auth_aes128_md5, auth_aes128_sha1, auth_chain_a,auth_chain_b```
    obfs           | 混淆插件   | [混淆插件][P]，推荐使用```plain, http_simple, http_post, tls1.2_ticket_auth```
 
 
